@@ -345,24 +345,6 @@ nav.scrolled {
 .nav-links a.active { color: var(--gold-light); }
 .nav-links a:hover::after,
 .nav-links a.active::after { width: 100%; }
-.nav-links a.nav-cv {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  border-radius: 8px;
-  border: 1px solid rgba(246, 199, 68, 0.25);
-  color: var(--gold);
-  font-size: 12.5px;
-  transition: all 0.3s var(--ease-smooth);
-}
-.nav-links a.nav-cv:hover {
-  background: rgba(246, 199, 68, 0.1);
-  border-color: var(--gold);
-  color: var(--gold-light);
-  transform: translateY(-1px);
-}
-.nav-links a.nav-cv::after { display: none; }
 .nav-cta {
   background: linear-gradient(135deg, var(--gold), var(--gold-light)) !important;
   color: #0a0a0a !important;
