@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ubaid Ullah — Full Stack Developer, Mobile App Developer & AI Engineer based in Peshawar, Pakistan. Building Android apps, web applications, and AI-powered solutions.">
+  <meta name="keywords"
+    content="Ubaid Ullah, Full Stack Developer, Mobile App Developer, Android Developer, AI Engineer, Peshawar, Pakistan, React, Flask, Python, Kotlin, Java">
+  <meta name="author" content="Ubaid Ullah">
+  <meta property="og:title" content="Ubaid Ullah — Full Stack & Mobile App Developer">
+  <meta property="og:description" content="Building Android apps, web applications, and AI-powered solutions.">
+  <meta property="og:type" content="website">
+  <title>Ubaid Ullah — Full Stack & Mobile App Developer | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══ PRELOADER ═══ -->
+  <div id="preloader">
+    <div class="pre-logo">UU</div>
+    <div class="pre-text">Loading portfolio...</div>
+    <div class="pre-bar">
+      <div class="pre-fill"></div>
+    </div>
+  </div>
+
+  <!-- ═══ CUSTOM CURSOR ═══ -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ═══ SCROLL PROGRESS ═══ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ═══ BACKGROUND EFFECTS ═══ -->
+  <canvas id="particles"></canvas>
+  <div class="noise-overlay"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#hero">Ubaid<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" data-section="about">About</a></li>
+        <li><a href="#services" data-section="services">Services</a></li>
+        <li><a href="#skills" data-section="skills">Skills</a></li>
+        <li><a href="#experience" data-section="experience">Journey</a></li>
+        <li><a href="#projects" data-section="projects">Work</a></li>
+        <li><a href="#certs" data-section="certs">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      </ul>
+      <button class="burger" id="burger-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mmenu" id="mmenu">
+      <div class="mmenu-inner">
+        <a href="#about" class="mmenu-link">About</a>
+        <a href="#services" class="mmenu-link">Services</a>
+        <a href="#skills" class="mmenu-link">Skills</a>
+        <a href="#experience" class="mmenu-link">Journey</a>
+        <a href="#projects" class="mmenu-link">Work</a>
+        <a href="#certs" class="mmenu-link">Certs</a>
+        <a href="#contact" class="mmenu-link mmenu-cta">Let's Talk</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <!-- Social sidebar (desktop) -->
+    <div class="hero-socials">
+      <a href="https://github.com/Ubaid-maker" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/ubaid-ullah-233196286" target="_blank" title="LinkedIn"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="https://wa.me/923369008804" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <div class="social-line"></div>
+    </div>
+
+    <div class="wrap hero-grid">
+      <div class="hero-content">
+        <div class="badge"><span class="badge-dot"></span>Available for opportunities</div>
+        <h1 class="hero-name">Ubaid<br><span class="grad-text">Ullah.</span></h1>
+        <div class="hero-role" id="typing-text"></div>
+        <p class="hero-desc">A Computer Science student at UET Peshawar who completed a 3-month internship at Avayo,
+          building mobile applications, AI-powered web apps, and automation that solve real problems.</p>
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+          <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Hire Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo-wrapper">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-inner">
+            <img src="assets/photo/ubaid.png" alt="Ubaid Ullah — Full Stack & Mobile Developer">
+          </div>
+          <!-- Orbiting tech icons -->
+          <div class="orbit-ring">
+            <div class="orbit-icon" style="--i:0"><i class="fab fa-android"></i></div>
+            <div class="orbit-icon" style="--i:1"><i class="fab fa-python"></i></div>
+            <div class="orbit-icon" style="--i:2"><i class="fab fa-react"></i></div>
+            <div class="orbit-icon" style="--i:3"><i class="fab fa-js"></i></div>
+            <div class="orbit-icon" style="--i:4"><i class="fas fa-brain"></i></div>
+            <div class="orbit-icon" style="--i:5"><i class="fab fa-node-js"></i></div>
+          </div>
+        </div>
+        <!-- Floating info cards -->
+        <div class="floaty floaty-left">
+          <div class="floaty-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <div class="lbl">University</div>
+            <div class="val">UET Peshawar</div>
+          </div>
+        </div>
+        <div class="floaty floaty-right">
+          <div class="floaty-icon"><i class="fas fa-briefcase"></i></div>
+          <div>
+            <div class="lbl">FULL STACK</div>
+            <div class="val">DEVELOPER</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE (Dual Direction) ═══ -->
+  <div class="marquee">
+    <div class="marquee-track marquee-forward">
+      <span><i class="fab fa-android tech-icon"></i> <b class="tech-highlight">Android</b> · Java · Kotlin · <i
+          class="fab fa-python tech-icon"></i> <b class="tech-highlight">Python</b> · Flask · <i
+          class="fab fa-react tech-icon"></i> React · JavaScript · TypeScript · Node.js · <i
+          class="fas fa-brain tech-icon"></i> <b class="tech-highlight">Groq AI</b> · LLaMA 3.3 · Firebase · MySQL ·
+        REST APIs · Git · <i class="fab fa-android tech-icon"></i> <b class="tech-highlight">Android</b> · Java · Kotlin
+        · <i class="fab fa-python tech-icon"></i> <b class="tech-highlight">Python</b> · Flask · <i
+          class="fab fa-react tech-icon"></i> React · JavaScript · TypeScript · Node.js · <i
+          class="fas fa-brain tech-icon"></i> <b class="tech-highlight">Groq AI</b> · LLaMA 3.3 · Firebase · MySQL ·
+        REST APIs · Git</span>
+    </div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track marquee-backward">
+      <span>n8n Automation · <b class="tech-highlight">Vercel</b> · Railway · Netlify · MongoDB · SQLite · XML Layouts ·
+        Google Opal · Room DB · <b class="tech-highlight">Prompt Engineering</b> · GraphQL · Docker · GitHub Actions ·
+        Figma · n8n Automation · <b class="tech-highlight">Vercel</b> · Railway · Netlify · MongoDB · SQLite · XML
+        Layouts · Retrofit · Room DB · <b class="tech-highlight">Prompt Engineering</b> · GraphQL · Docker · GitHub
+        Actions · Figma</span>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="eyebrow">01 / About</div>
+      <h2 class="h2">The developer behind <span class="grad-text">the code.</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm <strong>Ubaid Ullah</strong>, a Computer Science student at <strong>UET Peshawar</strong> (Batch
+            2025–2029, currently in my 3rd semester). I completed a 3-month internship as an app & web developer at
+            <strong>Avayo</strong>, a company based out of the KP IT Park office in Chamkani.
+          </p>
+          <p>I build everything from native <strong>Android apps</strong> with Kotlin/Java to <strong>Flask
+              APIs</strong> and <strong>React frontends</strong>, automate workflows with n8n, and integrate AI models
+            like Groq's LLaMA into real applications. Outside of that I freelance, delivering apps and websites for
+            clients while completing IBM's Generative AI for Mobile App Developers specialization on the side.</p>
+          <p>Whether it's a seismic risk-assessment app, an AI-powered quiz generator, or a B2B product showcase — I
+            ship real products that solve real problems.</p>
+        </div>
+        <div class="stat-grid stagger-children">
+          <div class="glass stat"><b data-target="15" data-suffix="+">0</b><span>Projects Built</span></div>
+          <div class="glass stat"><b data-target="4">0</b><span>IBM AI Courses</span></div>
+          <div class="glass stat"><b data-target="6">0</b><span>Paid Client Sites</span></div>
+          <div class="glass stat"><b data-target="100" data-suffix="%">0</b><span>Commitment</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES (NEW) ═══ -->
+  <section id="services">
+    <div class="wrap">
+      <div class="eyebrow">02 / Services</div>
+      <h2 class="h2">What I can build <span class="grad-text">for you.</span></h2>
+      <p class="section-desc">End-to-end development solutions — from idea to deployed product.</p>
+      <div class="services-grid stagger-children">
+        <div class="glass service-card tilt-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile App Development</h3>
+          <p>Native Android applications with modern architecture, clean UI/UX, Firebase backend integration, and
+            everything from GPS to push notifications.</p>
+          <div class="service-tags">
+            <span>Android</span><span>Java</span><span>Kotlin</span><span>Firebase</span><span>Room DB</span>
+          </div>
+        </div>
+        <div class="glass service-card tilt-card">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Full Stack Web Dev</h3>
+          <p>Complete web solutions from React frontends to Flask & Node backends, with databases, authentication, and
+            deployment — production-ready on day one.</p>
+          <div class="service-tags">
+            <span>React</span><span>Flask</span><span>Node.js</span><span>MySQL</span><span>REST APIs</span>
+          </div>
+        </div>
+        <div class="glass service-card tilt-card">
+          <div class="service-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI & Automation</h3>
+          <p>AI-powered features, chatbots, LLM integrations, and workflow automation that transform how your business
+            operates — smart solutions, zero busywork.</p>
+          <div class="service-tags">
+            <span>Groq API</span><span>LLaMA</span><span>n8n</span><span>Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="eyebrow">03 / Skills</div>
+      <h2 class="h2">What I work <span class="grad-text">with daily.</span></h2>
+      <div class="skills-grid stagger-children">
+
+        <div class="glass skill-card tilt-card" data-accent="cyan">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h4>Mobile Development</h4>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Android</span>
+            <span class="chip">Java</span>
+            <span class="chip">Kotlin</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">Room DB</span>
+            <span class="chip">XML Layouts</span>
+            <span class="chip">Retrofit</span>
+          </div>
+        </div>
+
+        <div class="glass skill-card tilt-card" data-accent="violet">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-palette"></i></div>
+            <h4>Frontend</h4>
+          </div>
+          <div class="chip-row">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">React</span>
+          </div>
+        </div>
+
+        <div class="glass skill-card tilt-card" data-accent="gold">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-server"></i></div>
+            <h4>Backend</h4>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">Flask</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">GraphQL</span>
+          </div>
+        </div>
+
+        <div class="glass skill-card tilt-card" data-accent="emerald">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+            <h4>Database & Storage</h4>
+          </div>
+          <div class="chip-row">
+            <span class="chip">MySQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">Firebase DB</span>
+          </div>
+        </div>
+
+        <div class="glass skill-card tilt-card" data-accent="rose">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-brain"></i></div>
+            <h4>AI & Automation</h4>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Groq API</span>
+            <span class="chip">LLaMA 3.3</span>
+            <span class="chip">n8n</span>
+            <span class="chip">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="glass skill-card tilt-card" data-accent="cyan">
+          <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-rocket"></i></div>
+            <h4>DevOps & Deploy</h4>
+          </div>
+          <div class="chip-row">
+            <span class="chip">Git</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Vercel</span>
+            <span class="chip">Railway</span>
+            <span class="chip">Netlify</span>
+            <span class="chip">GitHub Actions</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE & EDUCATION ═══ -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="eyebrow">04 / Experience & Education</div>
+      <h2 class="h2">My journey <span class="grad-text">so far.</span></h2>
+      <div class="tl">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="glass tl-card">
+            <span class="tl-period">3 Months · Completed</span>
+            <div class="tl-title">App & Web Developer — Internship</div>
+            <div class="tl-org">Avayo — KP IT Park, Chamkani</div>
+            <div class="tl-desc">Built internal tools and client-facing products, including an employee attendance app
+              with geofencing and a B2B product showcase site. Worked with Android (Java/Kotlin), Flask, React, and
+              Firebase.</div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="glass tl-card">
+            <span class="tl-period">2025 — 2029</span>
+            <div class="tl-title">BS Computer Science</div>
+            <div class="tl-org">UET Peshawar — Reg. 25PWCS1448</div>
+            <div class="tl-desc">Currently in 3rd semester with a first-semester GPA of 3.76. Actively building projects
+              and freelancing alongside coursework.</div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="glass tl-card">
+            <span class="tl-period">2023 — 2024</span>
+            <div class="tl-title">IT Diploma</div>
+            <div class="tl-org">Sarhad Computer College, Peshawar</div>
+            <div class="tl-desc">IT fundamentals, networking, and a year of remote graphic design work that sparked my
+              passion for development.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="eyebrow">05 / Projects</div>
+      <h2 class="h2">Things I've <span class="grad-text">built & shipped.</span></h2>
+      <div class="filters">
+        <button class="filter active" data-f="all">All</button>
+        <button class="filter" data-f="mobile">📱 Mobile Apps</button>
+        <button class="filter" data-f="web">🌐 Websites</button>
+        <button class="filter" data-f="ai">🤖 AI Tools</button>
+      </div>
+      <div class="proj-grid stagger-children">
+
+        <!-- FEATURED: SeismoSafe -->
+        <div class="glass proj-card featured tilt-card" data-cat="mobile">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">PAID PROJECT · FEATURED</div>
+            <div class="proj-title">SeismoSafe Pakistan</div>
+            <p class="proj-desc">A bilingual seismic building risk-assessment app, built for an MSc thesis — GPS-based
+              surveys, risk scoring engine, and an interactive seismic map. Full Android app with location services, PDF
+              reports, and Urdu/English support.</p>
+            <div class="proj-tags">
+              <span>Android</span><span>Java</span><span>GPS</span><span>Firebase</span><span>Urdu/English</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attendance App -->
+        <div class="glass proj-card tilt-card" data-cat="mobile">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">AVAYO</div>
+            <div class="proj-title">Attendance App</div>
+            <p class="proj-desc">Employee check-in/check-out app with location tagging, geofencing, attendance history,
+              and PDF export for management.</p>
+            <div class="proj-tags"><span>Android</span><span>Kotlin</span><span>Geofencing</span><span>Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FEATURED: StudyForge -->
+        <div class="glass proj-card featured tilt-card" data-cat="ai">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">HACKATHON · FEATURED</div>
+            <div class="proj-title">StudyForge</div>
+            <p class="proj-desc">An AI quiz generator built for the July AI Hackathon on Devpost — turns any study
+              material into intelligent practice questions using Groq's LLaMA model. Features adaptive difficulty, topic
+              analysis, and instant feedback.</p>
+            <div class="proj-tags"><span>AI</span><span>React</span><span>Groq API</span><span>LLaMA</span><span>Web
+                App</span></div>
+            <a class="proj-link" href="https://studyforge-sand.vercel.app/" target="_blank">Live demo <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- NovaPlayer -->
+        <div class="glass proj-card tilt-card" data-cat="mobile">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">PERSONAL PROJECT</div>
+            <div class="proj-title">NovaPlayer</div>
+            <p class="proj-desc">A combined video & audio player — folder-based library, private vault, network
+              streaming. In development for monetization on Google Play.</p>
+            <div class="proj-tags"><span>Android</span><span>Kotlin</span><span>Media
+                Player</span><span>ExoPlayer</span></div>
+          </div>
+        </div>
+
+        <!-- Impact Ranking Portal -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">UET PESHAWAR</div>
+            <div class="proj-title">Impact Ranking Portal</div>
+            <p class="proj-desc">A submission tracker for UET's Quality Enhancement Cell, speeding up how faculty gather
+              and submit ranking evidence.</p>
+            <div class="proj-tags"><span>React</span><span>Flask</span><span>MySQL</span><span>Evidence Tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Faculty Workload App -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">UET PESHAWAR</div>
+            <div class="proj-title">Faculty Workload App</div>
+            <p class="proj-desc">A remuneration & teaching-load dashboard giving a live cross-department view of faculty
+              workload.</p>
+            <div class="proj-tags"><span>React</span><span>Node.js</span><span>Live Dashboard</span></div>
+          </div>
+        </div>
+
+        <!-- Local AI Context Compiler -->
+        <div class="glass proj-card tilt-card" data-cat="ai">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">DEV TOOL</div>
+            <div class="proj-title">Local AI Context Compiler</div>
+            <p class="proj-desc">Combines your scattered files and notes into one clean, copyable text block for feeding
+              into AI tools — boosting prompt quality.</p>
+            <div class="proj-tags"><span>JavaScript</span><span>Utility</span><span>AI Workflow</span></div>
+            <a class="proj-link" href="https://ubaid-maker.github.io/local-ai-context-compiler/" target="_blank">Live
+              demo <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Suleman Hakeem Portfolio -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">FREELANCE</div>
+            <div class="proj-title">Suleman Hakeem Portfolio</div>
+            <p class="proj-desc">Personal portfolio site built for a professional client working on a major hydropower
+              project in Pakistan.</p>
+            <div class="proj-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Portfolio</span></div>
+            <a class="proj-link" href="https://suleman-hakeem-portfolio.vercel.app/" target="_blank">Visit site <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Fazal Mabood Portfolio -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">FREELANCE</div>
+            <div class="proj-title">Fazal Mabood Portfolio</div>
+            <p class="proj-desc">Portfolio site for an Amazon & e-commerce specialist — clean design with strong
+              conversion focus.</p>
+            <div class="proj-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Portfolio</span></div>
+            <a class="proj-link" href="https://ubaid-maker.github.io/fazal-mabood-portfolio/" target="_blank">Visit site
+              <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Naeem Khan Portfolio -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">FREELANCE</div>
+            <div class="proj-title">Naeem Khan Portfolio</div>
+            <p class="proj-desc">Portfolio site built for a UET Peshawar professor — academic-focused design with
+              publication showcase.</p>
+            <div class="proj-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Academic</span></div>
+            <a class="proj-link" href="https://ubaid-maker.github.io/Naeem-khan-portfolio/" target="_blank">Visit site
+              <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Muhammad Sohail Portfolio -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">FREELANCE</div>
+            <div class="proj-title">Muhammad Sohail Portfolio</div>
+            <p class="proj-desc">A personal portfolio site with modern aesthetics built for a professional client.</p>
+            <div class="proj-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Portfolio</span></div>
+            <a class="proj-link" href="https://ubaid-maker.github.io/Muhammad-Sohail-Portfolio/" target="_blank">Visit
+              site <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Mashood Portfolio -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">FAMILY</div>
+            <div class="proj-title">Mashood Portfolio</div>
+            <p class="proj-desc">Portfolio site built for his brother, a professional video editor — showcasing reels,
+              projects, and client work.</p>
+            <div class="proj-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Video Editor</span></div>
+            <a class="proj-link" href="https://ubaid-maker.github.io/mashood_protfolio/" target="_blank">Visit site <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Avayo Product Reference -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">AVAYO · B2B</div>
+            <div class="proj-title">Avayo Product Reference</div>
+            <p class="proj-desc">A B2B product showcase site presenting Avayo's new products to partner businesses with
+              interactive catalog.</p>
+            <div class="proj-tags"><span>React</span><span>B2B</span><span>Product Showcase</span></div>
+            <a class="proj-link" href="https://ubaid-maker.github.io/avayo-product-reference/" target="_blank">Visit
+              site <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- NovaMind Academy -->
+        <div class="glass proj-card tilt-card" data-cat="web">
+          <div class="proj-card-bar"></div>
+          <div class="proj-card-body">
+            <div class="proj-cat">FREELANCE</div>
+            <div class="proj-title">NovaMind Academy</div>
+            <p class="proj-desc">Full landing page for an academy teaching AI, coding, and robotics to kids aged 7–14
+              with animated sections and enrollment flow.</p>
+            <div class="proj-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Landing Page</span></div>
+            <a class="proj-link" href="https://novamindacademy.netlify.app/" target="_blank">Visit site <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATIONS ═══ -->
+  <section id="certs">
+    <div class="wrap">
+      <div class="eyebrow">06 / Certifications</div>
+      <h2 class="h2">Credentials & <span class="grad-text">achievements.</span></h2>
+      <div class="cert-grid stagger-children">
+        <div class="glass cert-card">
+          <div class="cert-img"><img src="assets/certs/specialization.png"
+              alt="Generative AI for Mobile App Developers Specialization"></div>
+          <div class="cert-body">
+            <div class="cert-name">Generative AI for Mobile App Developers</div>
+            <div class="cert-date">IBM / SkillUp · Specialization, 4 courses · Aug 2026</div>
+          </div>
+        </div>
+        <div class="glass cert-card">
+          <div class="cert-img"><img src="assets/certs/cert-intro.png"
+              alt="Generative AI: Introduction and Applications"></div>
+          <div class="cert-body">
+            <div class="cert-name">Generative AI: Introduction & Applications</div>
+            <div class="cert-date">IBM · Jul 2026</div>
+          </div>
+        </div>
+        <div class="glass cert-card">
+          <div class="cert-img"><img src="assets/certs/cert-prompt.png" alt="Generative AI: Prompt Engineering Basics">
+          </div>
+          <div class="cert-body">
+            <div class="cert-name">Generative AI: Prompt Engineering Basics</div>
+            <div class="cert-date">IBM · Jul 2026</div>
+          </div>
+        </div>
+        <div class="glass cert-card">
+          <div class="cert-img"><img src="assets/certs/cert-elevate.png"
+              alt="Generative AI: Elevate your Software Development Career"></div>
+          <div class="cert-body">
+            <div class="cert-name">Elevate Your Software Dev Career</div>
+            <div class="cert-date">IBM · Aug 2026</div>
+          </div>
+        </div>
+        <div class="glass cert-card">
+          <div class="cert-img"><img src="assets/certs/cert-turbocharge.png"
+              alt="Generative AI: Turbocharge Mobile App Development"></div>
+          <div class="cert-body">
+            <div class="cert-name">Turbocharge Mobile App Development</div>
+            <div class="cert-date">SkillUp · Aug 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DIGITAL BADGES ═══ -->
+  <section id="badges">
+    <div class="wrap">
+      <div class="eyebrow">07 / Digital Badges</div>
+      <h2 class="h2">IBM Digital <span class="grad-text">Credentials.</span></h2>
+      <div class="badge-grid stagger-children">
+        <div class="glass badge-item"><img src="assets/certs/badge-specialization.png"
+            alt="Generative AI for Mobile App Developers Specialization badge"></div>
+        <div class="glass badge-item"><img src="assets/certs/badge-essentials.png" alt="Generative AI Essentials badge">
+        </div>
+        <div class="glass badge-item"><img src="assets/certs/badge-essentials-dev.png"
+            alt="Generative AI Essentials for Software Developers V2 badge"></div>
+        <div class="glass badge-item"><img src="assets/certs/badge-prompt.png"
+            alt="Generative AI Prompt Engineering badge"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-split">
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <div class="eyebrow">08 / Contact</div>
+          <h2 class="h2">Let's build <span class="grad-text">something together.</span></h2>
+          <p class="section-desc">Have a project in mind? Whether it's a mobile app, a web platform, or an AI-powered
+            solution — let's make it happen.</p>
+          <div class="contact-cards">
+            <div class="glass contact-item">
+              <div class="contact-ic"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-lbl">Email</div>
+                <div class="contact-val">uu435642@gmail.com</div>
+              </div>
+            </div>
+            <div class="glass contact-item">
+              <div class="contact-ic"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <div class="contact-lbl">Location</div>
+                <div class="contact-val">Peshawar, Pakistan</div>
+              </div>
+            </div>
+            <div class="glass contact-item">
+              <div class="contact-ic"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-lbl">LinkedIn</div><a class="contact-val"
+                  href="https://linkedin.com/in/ubaid-ullah-233196286" target="_blank">ubaid-ullah</a>
+              </div>
+            </div>
+            <div class="glass contact-item">
+              <div class="contact-ic"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="contact-lbl">GitHub</div><a class="contact-val" href="https://github.com/Ubaid-maker"
+                  target="_blank">Ubaid-maker</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap glass">
+          <h3>Send me a message ✉️</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" id="form-name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="form-email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" id="form-subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="form-message" placeholder="Tell me about your project..." rows="5"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#hero">Ubaid<span>.</span></a>
+          <p>Full Stack & Mobile App Developer based in Peshawar, Pakistan. Building apps, websites, and AI solutions
+            that solve real problems.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About Me</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#certs">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="footer-social-row">
+            <a href="https://github.com/Ubaid-maker" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/ubaid-ullah-233196286" target="_blank" title="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/923369008804" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Ubaid Ullah · Built with ❤️ in Peshawar, Pakistan</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ BACK TO TOP ═══ -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- ═══ WHATSAPP BUTTON ═══ -->
+  <a href="https://wa.me/923369008804?text=Hi%20Ubaid!%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+    target="_blank" id="whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+
+  <!-- ═══ CHAT WIDGET ═══ -->
+  <button id="chat-toggle" onclick="toggleChat()">
+    <svg class="ic-chat" viewBox="0 0 24 24">
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+    </svg>
+    <svg class="ic-close" viewBox="0 0 24 24">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+    </svg>
+  </button>
+  <div id="chat-window">
+    <div class="chat-header">
+      <div class="chat-avatar">🤖</div>
+      <div>
+        <h4>Ubaid's AI Assistant</h4>
+        <p>● Online · Powered by Groq</p>
+      </div>
+    </div>
+    <div id="chat-msgs">
+      <div class="cmsg bot">
+        <div class="cmsg-av">🤖</div>
+        <div class="cmsg-bubble">Hi! I'm Ubaid's AI assistant 👋 Ask me about his skills, projects, or how to hire him!
+        </div>
+      </div>
+    </div>
+    <div class="chat-quickies">
+      <button class="chat-quick" onclick="qSend('What are your skills?')">🛠 Skills</button>
+      <button class="chat-quick" onclick="qSend('Tell me about your mobile apps')">📱 Apps</button>
+      <button class="chat-quick" onclick="qSend('Tell me about your projects')">🚀 Projects</button>
+      <button class="chat-quick" onclick="qSend('How can I hire you?')">💼 Hire</button>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" id="chat-inp" placeholder="Ask anything..." onkeydown="if(event.key==='Enter')chatSend()">
+      <button id="chat-send" onclick="chatSend()"><svg viewBox="0 0 24 24">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+        </svg></button>
+    </div>
+  </div>
+
+  <!-- ═══ LIGHTBOX ═══ -->
+  <div id="lightbox"><button id="lb-close">✕</button><img id="lb-img" src="" alt="Certificate"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
